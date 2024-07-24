@@ -7,7 +7,8 @@ public class RobotGrowFish extends Robot implements FarmingRobot {
      * hàm khởi tạo giá trị của robot.
      */
     public RobotGrowFish(String id, String model, String WorkPlace, int productivity) {
-        super(id, model, WorkPlace);
+        super(id, model);
+        this.workPlace = FARM;
         quantityOfFish = 0;
         quantityOfProcessingFish = 0;
         this.productivity = productivity;
