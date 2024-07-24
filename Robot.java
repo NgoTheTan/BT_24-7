@@ -1,6 +1,7 @@
 public class Robot {
     protected String id;
     protected String model;
+    protected String WorkPlace;
 
     public String getId() {
         return id;
@@ -18,8 +19,17 @@ public class Robot {
         this.model = model;
     }
 
-    public Robot(String id, String model) {
+    public String getWorkPlace() {
+        return WorkPlace;
+    }
+
+    public void setWorkPlace(String workPlace) {
+        WorkPlace = workPlace;
+    }
+
+    public Robot(String id, String model, String WorkPlace) {
         this.id = id;
         this.model = model;
+        this.WorkPlace = WorkPlace;
     }
 }
