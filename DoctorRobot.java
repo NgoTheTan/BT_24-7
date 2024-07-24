@@ -15,7 +15,7 @@ public class DoctorRobot extends Robot implements MedicalRobot{
                 System.out.println("Cured person " + p.getName() + " illness!");
             }
             else {
-                System.out.println("This person don't need to see the doctor.");
+                System.out.println("This person doesn't need to see the doctor.");
             }
         } else {
             System.out.println("Can't help this object.");

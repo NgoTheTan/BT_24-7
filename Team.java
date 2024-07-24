@@ -4,18 +4,18 @@ import java.util.List;
 public class Team {
     private String teamName = "";
     private List<Person> list = new ArrayList<>();
-    
-    public Team(String teamName,List<Person> newlist){
+
+    public Team(String teamName, List<Person> newlist) {
         this.teamName = teamName;
         list = newlist;
     }
 
-    public void add(Person p){
+    public void add(Person p) {
         list.add(p);
     }
 
-    public void removeMember(String id){
-        for (int i=0;i<list.size();i++){
+    public void removeMember(String id) {
+        for (int i = 0; i < list.size(); i++) {
             if (list.get(i).getID().equalsIgnoreCase(id)) {
                 list.remove(i);
             }
@@ -38,9 +38,9 @@ public class Team {
         this.teamName = teamName;
     }
 
-    public String toString(){
-        String res= teamName+"\n";
-        for (int i=0;i<list.size();i++){
+    public String toString() {
+        String res = teamName + "\n";
+        for (int i = 0; i < list.size(); i++) {
             res = res + list.get(i).toString() + "\n";
         }
         return res;

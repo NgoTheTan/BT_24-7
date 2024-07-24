@@ -13,8 +13,7 @@ public class NurseRobot extends Robot implements MedicalRobot {
             if (p.getHealthCondition() >= Person.NORMAL) {
                 p.feelBetter();
                 System.out.println("Helped person " + p.getName() + " feel better!");
-            }
-            else {
+            } else {
                 System.out.println("Please go to the doctor robot for better healthcare.");
             }
         } else {
