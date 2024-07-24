@@ -5,10 +5,6 @@ public class Team {
     private String teamName = "";
     private List<Person> list = new ArrayList<>();
     
-    public Team(){
-
-    }
-
     public Team(String teamName,List<Person> newlist){
         this.teamName = teamName;
         list = newlist;
