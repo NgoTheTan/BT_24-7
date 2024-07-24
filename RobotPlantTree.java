@@ -6,8 +6,9 @@ public class RobotPlantTree extends Robot implements FarmingRobot {
     /**
      * hàm khởi tạo giá trị của robot.
      */
-    public RobotPlantTree(String id, String model, String WorkPlace, int productivity) {
-        super(id, model, WorkPlace);
+    public RobotPlantTree(String id, String model, int productivity) {
+        super(id, model);
+        this.workPlace = FARM;
         quantityOfTrees = 0;
         quantityOfProcessingTrees = 0;
         this.productivity = productivity;

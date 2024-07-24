@@ -1,7 +1,12 @@
 public class Person {
+    public static final int HEALTHY = 3;
+    public static final int NORMAL = 2;
+    public static final int WEAK = 1;
+    public static final int SUFFERING = 0;
     private String name;
     private int age;
     private String ID;
+    private int healthCondition;
 
     /**
      * Constructor.
@@ -10,10 +15,11 @@ public class Person {
      * @param age  int.
      * @param iD   String.
      */
-    public Person(String name, int age, String iD) {
+    public Person(String name, int age, String iD, int healthCondition) {
         this.name = name;
         this.age = age;
-        ID = iD;
+        this.ID = iD;
+        this.healthCondition = healthCondition;
     }
 
     /**
@@ -70,8 +76,23 @@ public class Person {
         ID = iD;
     }
 
+    /**
+     * Get the person's health condition.
+     * 
+     * @return health condition int.
+     */
+    public int getHealthCondition() {
+        return this.healthCondition;
+    }
+
+    /**
+     * Raise the person healt condition one level up.
+     */
+    public void feelBetter() {
+        this.healthCondition++;
+    }
+
     public String toString() {
         return "Name = " + name + ", age = " + age + ", ID = " + ID;
     }
-
 }
